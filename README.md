@@ -1,6 +1,6 @@
-# catbox
+# CatBox
 
-A new Flutter project.
+A simple cat adoption app built using Flutter as part of an online Flutter course.
 
 ## Getting Started
 
