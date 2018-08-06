@@ -22,8 +22,9 @@ class _CatListState extends State<CatList> {
 
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Scaffold(
-      backgroundColor: Colors.pink,
+      backgroundColor: theme.primaryColor,
       body: _buildBody(),
     );
   }

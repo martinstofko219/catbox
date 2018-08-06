@@ -19,7 +19,10 @@ class CatDetailsPage extends StatefulWidget {
 class _CatDetailsPageState extends State<CatDetailsPage> {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+
     return Scaffold(
+      backgroundColor: theme.primaryColor,
       body: SingleChildScrollView(
         child: Container(
           child: Column(
