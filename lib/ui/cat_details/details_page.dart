@@ -37,7 +37,7 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
           decoration: linearGradient,
           child: Column(
             children: <Widget>[
-              CatDetailsHeader(widget.cat, avatarTag: widget.avatarTag)
+              CatDetailsHeader(widget.cat, avatarTag: widget.avatarTag),
             ],
           ),
         ),
