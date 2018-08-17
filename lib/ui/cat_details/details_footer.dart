@@ -15,5 +15,6 @@ class _CatShowcaseState extends State<CatShowcase> with TickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    throw UnimplementedError();
   }
 }
