@@ -17,6 +17,12 @@ class _CatListState extends State<CatList> {
   @override
   void initState() {
     super.initState();
+    // _loadCats();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
     _loadCats();
   }
 
@@ -106,7 +112,7 @@ class _CatListState extends State<CatList> {
 
   _loadCats() async {
     String fileData =
-        await DefaultAssetBundle.of(context).loadString("assets/cats.json");
+        await DefaultAssetBundle.of(context).loadString('assets/cats.json');
     setState(() {
       _cats = CatApi.allCatsFromJson(fileData);
     });
@@ -114,12 +120,12 @@ class _CatListState extends State<CatList> {
 
   _navigateToCatDetails(Cat cat, Object avatarTag) {
     Navigator.of(context).push(
-          FadePageRoute(
-            builder: (context) {
-              return CatDetailsPage(cat, avatarTag: avatarTag);
-            },
-            settings: RouteSettings(),
-          ),
-        );
+      FadePageRoute(
+        builder: (context) {
+          return CatDetailsPage(cat, avatarTag: avatarTag);
+        },
+        settings: RouteSettings(),
+      ),
+    );
   }
 }
