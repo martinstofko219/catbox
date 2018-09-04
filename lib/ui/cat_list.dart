@@ -17,13 +17,14 @@ class _CatListState extends State<CatList> {
   @override
   void initState() {
     super.initState();
-    // _loadCats();
   }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _loadCats();
+    if (_cats.length == 0) {
+      _loadCats();
+    }
   }
 
   @override
