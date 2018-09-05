@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 import 'package:catbox/models/cat.dart';
-import 'package:catbox/ui/cat_details/details_header.dart';
+import 'package:catbox/ui/cat_details/header/details_header.dart';
 
 class CatDetailsPage extends StatefulWidget {
   final Cat cat;
