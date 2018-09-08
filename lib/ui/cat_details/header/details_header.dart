@@ -30,7 +30,7 @@ class _CatDetailsHeaderState extends State<CatDetailsHeader> {
         fit: BoxFit.cover,
       ),
       // color: const Color(0xBB42A5F5),
-      color: theme.primaryColor.withAlpha(124),
+      color: theme.primaryColor.withAlpha(150),
     );
 
     var avatar = Hero(
