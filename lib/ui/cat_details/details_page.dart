@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
-import 'package:catbox/models/cat.dart';
-import 'package:catbox/ui/cat_details/header/details_header.dart';
+import '../../models/cat.dart';
+import './header/details_header.dart';
+import './details_body.dart';
 
 class CatDetailsPage extends StatefulWidget {
   final Cat cat;
@@ -37,7 +38,14 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
           decoration: linearGradient,
           child: Column(
             children: <Widget>[
-              CatDetailsHeader(widget.cat, avatarTag: widget.avatarTag),
+              CatDetailsHeader(
+                widget.cat,
+                avatarTag: widget.avatarTag,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: CatDetailsBody(widget.cat),
+              ),
             ],
           ),
         ),
