@@ -45,8 +45,8 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
               Padding(
                 padding: const EdgeInsets.all(24.0),
                 child: CatDetailsBody(widget.cat),
-              CatShowcase(widget.cat),
               ),
+              CatShowcase(widget.cat),
             ],
           ),
         ),
