@@ -9,10 +9,13 @@ class DetailsShowcase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final TextTheme textTheme = Theme.of(context).textTheme;
+
     return Center(
       child: Text(
-        'Details',
+        cat.description,
         textAlign: TextAlign.center,
+        style: textTheme.subhead.copyWith(color: Colors.white),
       ),
     );
   }
